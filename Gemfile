@@ -8,6 +8,10 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.6'
+# Flexible authentication solution for Rails with Warden. 
+gem 'devise'
+# Translations for the devise gem
+gem 'devise-i18n'
 # Repository for collecting Locale data for Ruby on Rails I18n as well as other interesting, Rails related I18n stuff
 gem 'rails-i18n'
 # Use sqlite3 as the database for Active Record

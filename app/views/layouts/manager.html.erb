@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
   <head>
     <title>SSMA Gagliardi</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'normalize', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-  	<h1>MANAGER</h1>
+    <div>
+    <%= render partial: "layouts/partials/side-bar" %>
     <%= yield %>
+    <%= render partial: "layouts/partials/bar-navigation" %>
+    <%= render partial: "layouts/partials/footer" %>
+    </div>
   </body>
 </html>
